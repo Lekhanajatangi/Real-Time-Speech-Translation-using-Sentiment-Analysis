@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/845e21dc6a.js" crossorigin="anonymous"></script>
+    <title>Text and Speech App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('textToSpeech')">Text-To-Speech</a></li>
+            <li><a href="#" onclick="showSection('speechToText')">Speech-To-Text</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <div id="home" class="section active">
+            <h1>Welcome to Text & Speech App</h1>
+            <p>Select an option from the navbar to get started.</p>
+        </div>
+
+        <!-- Text-to-Speech Section -->
+        <div id="textToSpeech" class="section">
+            <h2>Enter Text to Convert to Speech</h2>
+            <textarea id="textInput" rows="4" placeholder="Type something..."></textarea>
+            <button onclick="convertTextToSpeech()">Convert to Speech</button>
+            <p id="sentimentResult"></p>
+        </div>
+
+        <!-- Speech-to-Text Section -->
+        <div id="speechToText" class="section">
+            <h2>Speak to Convert to Text</h2>
+            <button onclick="startSpeechRecognition()">Start Listening</button>
+            <p id="speechResult"></p>
+            <p id="speechSentimentResult"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
