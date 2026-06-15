@@ -8,7 +8,7 @@ The project integrates Natural Language Processing (NLP), Speech Recognition, La
 
 # Live Demo
 
-https://real-time-speech-translation-using.onrender.com
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://real-time-speech-translation-using.onrender.com)
 
 # Key Features
 
