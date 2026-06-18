@@ -118,7 +118,7 @@ https://github.com/Lekhanajatangi
 
 # License
 
-This project is developed for educational and learning purposes.
+This project is developed for educational and academic project.
 
 # Support
 
